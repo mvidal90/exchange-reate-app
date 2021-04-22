@@ -1,0 +1,29 @@
+
+.form__input{
+    border: 1px solid $border-grey;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    height: 30px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding-left: 2%;
+    width: 95%;
+}
+.form__input-warning{
+    border: 1px solid $warning;
+}
+
+.form__warning-container{
+    max-width: 270px;
+}
+
+.form__warning{
+    color: $warning;
+    font-size: 10px;
+    display: flex;
+}
+
+.react-datetime-picker__wrapper{
+    border: none;
+    box-sizing: content-box;
+}

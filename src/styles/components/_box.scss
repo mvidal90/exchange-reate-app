@@ -1,0 +1,14 @@
+
+.box__container{
+    background-color: $secondary;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 1%;
+    height: 85vh;
+    padding: 5% 20%;
+}
+
+.box__scroll{
+    height: 83vh;
+    overflow-y: auto;    
+}
+ 
