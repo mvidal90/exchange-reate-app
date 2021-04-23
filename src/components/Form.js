@@ -3,9 +3,9 @@ import DateTimePicker from 'react-datetime-picker';
 import moment from 'moment';
 
 import { ExchangeRatesContext } from '../context/ExchangeRatesContext';
+import { CalendarIcon } from './CalendarIcon';
 import { Option } from './Option';
 import { totalCodes } from '../data/codes';
-import { ArrowSelect } from './ArrowSelect';
 
 export const Form = () => {
     
@@ -13,7 +13,6 @@ export const Form = () => {
 
     const [date, setDate] = useState(new Date());
     const [code, setCode] = useState('EUR');
-    //console.log(query)
 
     const handleSelectCurrency = (e) =>{
         setCode( e.target.value );
@@ -50,7 +49,6 @@ export const Form = () => {
                         />
                     )
                 }
-                <ArrowSelect />
             </select>
                 {
                     code !== "EUR" &&
@@ -63,14 +61,13 @@ export const Form = () => {
             <label>Seleccione la moneda de referencia</label>
             <br />
             <DateTimePicker 
-                disableClock={ true }
-                clearItem="Close"
-                closeWidget={ false }
+                calendarIcon={ <CalendarIcon /> }
                 className={[ "form__input" ]}
-                format="dd/MM/y"
                 dayPlaceholder="DD"
-                monthPlaceholder="MM"
+                disableClock={ true }
+                format="dd/MM/y"
                 maxDate={ new Date() }
+                monthPlaceholder="MM"
                 onChange={ setDate }
                 value={ date }
                 yearPlaceholder="AAAA"

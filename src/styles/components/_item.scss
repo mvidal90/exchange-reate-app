@@ -32,3 +32,9 @@
 .item__value{
     justify-content: right;
 }
+
+.item__loading-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

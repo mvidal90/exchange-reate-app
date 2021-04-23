@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from "prop-types";
 
 export const Option = ({currency}) => {
     return (
         <option 
             value={ currency } 
-            //selected={ currency === 'EUR'}
         >
             {currency}
         </option>
-    )
+    );
+};
+
+Option.propTypes ={
+    currency: PropTypes.object.isRequired,
 }
